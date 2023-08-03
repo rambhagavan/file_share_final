@@ -7,7 +7,7 @@ let transporter=nodemailer.createTransport({
     port:process.env.SMTP_PORT ,
     port:process.env.SMTP_PORT ||587,
     secure:false,
-    auth:{
+    auth:{ 
         user:process.env.MAIL_USER,
         pass:process.env.MAIL_PASS
     }
